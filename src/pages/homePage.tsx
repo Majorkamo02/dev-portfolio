@@ -50,7 +50,7 @@ function Homepage() {
                     }}
                     onAnimationComplete={()=>{firstLoad = true}}
                     >
-                        <img src="src\assets\Profile Picture.png" alt="" />
+                        <img src="src\assets\Profile-Picture.png" alt="" />
                         <a href="mailto:cameron.l.jolly@gmail.com">cameron.l.jolly@gmail.com</a>
                         <NavLink to="/Resume">Resume</NavLink>
 
