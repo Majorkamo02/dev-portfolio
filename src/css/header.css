@@ -1,0 +1,46 @@
+header {
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  margin: 0;
+  border: 0;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  font-family: "saira", sans-serif;
+  align-items: center;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: black;
+  z-index: 100;
+}
+
+.header-name {
+  font-weight: 600;
+  margin-left: 1vw;
+}
+
+nav {
+  margin-right: 1.5vw;
+  margin-left: auto;
+  display: flex;
+}
+
+a {
+  margin: 1vw;
+  text-decoration: none;
+  color: inherit;
+}
+
+a[aria-current] {
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.08em;
+  text-decoration-style: double;
+  text-underline-offset: 0.15em;
+}
+
+a:hover:not([aria-current="page"]) {
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.15em;
+}

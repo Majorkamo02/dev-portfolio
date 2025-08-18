@@ -1,0 +1,38 @@
+.backdrop {
+  position: fixed;
+  inset: 0;
+  top: 6%;
+  background: linear-gradient(
+    to top,
+    rgba(158, 158, 158, 0.8) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  height: 100%;
+  z-index: -1;
+}
+
+.port-card-holder {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 2.5rem;
+  padding: 3rem 2rem;
+  margin: 0 auto;
+  max-width: 1500px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 700px) {
+  .port-card-holder {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem 0.5rem;
+  }
+}
+
+.port-header {
+  font-size: 10vh;
+}

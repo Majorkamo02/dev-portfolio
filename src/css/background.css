@@ -1,0 +1,7 @@
+.background-canvas {
+  position: absolute;
+  inset: 0 0 auto 0;
+  z-index: -1;
+  pointer-events: none;
+  background-color: white;
+}

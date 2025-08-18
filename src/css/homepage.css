@@ -1,0 +1,232 @@
+.initial-info-container {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+
+  background: linear-gradient(
+    to top,
+    rgba(158, 158, 158, 0.8) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+
+  z-index: 1;
+
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  overflow-y: visible;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  margin-top: 10%;
+  margin-left: 20%;
+}
+.fname,
+.lname {
+  font-size: 3vw;
+}
+.fname:hover,
+.lname:hover {
+  cursor: default;
+}
+h1 {
+  margin: 0;
+}
+
+.profile-pic {
+  grid-row: span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 30%;
+}
+
+.profile-pic img {
+  width: 36vw;
+  height: auto;
+  border-radius: 2%;
+  object-fit: cover;
+  transition: 600ms ease-out;
+  margin-bottom: 2%;
+}
+
+.profile-pic img:hover {
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.8);
+  transition: 600ms ease-out;
+}
+
+.profile-pic a:hover {
+  text-decoration-style: underline;
+  text-underline-offset: 0.4vw;
+}
+
+.profile-pic a {
+  margin-left: auto;
+  margin-right: 15%;
+  margin-top: 1%;
+  font-size: 1.3vw;
+}
+
+.who-am-i {
+  margin-left: 20%;
+  margin-right: auto;
+  margin-bottom: 30vh;
+  font-size: 1.7vw;
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.test {
+  margin-top: 100vh;
+  z-index: 2;
+  position: relative;
+}
+
+.main-portfolio {
+  display: grid;
+  grid-template-columns: 1 1;
+  grid-template-rows: 1 1;
+  height: 100vh;
+  position: relative;
+}
+
+.description {
+  font-size: 1.4vw;
+  margin-top: 1vh;
+}
+
+.my-work {
+  grid-row: 2;
+  grid-column: 1;
+  position: relative;
+  margin: auto;
+  margin-top: 25vh;
+  margin-right: 59%;
+}
+
+.my-work > .my-work-nav > button {
+  font-size: 3vh;
+  border: solid;
+  border-radius: 50px;
+  padding-left: 3vh;
+  padding-right: 3vh;
+  transition: 1000ms;
+  background-color: transparent;
+}
+
+.my-work > .my-work-nav > button:hover {
+  transition: 1000ms;
+  margin-left: +2vh;
+  margin-right: -2vh;
+  background-color: rgba(218, 218, 218, 0.788);
+  cursor: pointer;
+}
+
+main {
+  overflow: hidden;
+}
+
+.main-about {
+  margin-top: 2vh;
+  margin-bottom: 0.5vh;
+}
+
+@media screen and (max-width: 1000px) {
+  .initial-info-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    width: 100vw;
+    height: auto;
+    position: static;
+    overflow-y: visible;
+    padding: 0;
+  }
+
+  .name {
+    align-items: center;
+    margin: 5vw auto 2vw auto;
+    gap: 0.5vw;
+  }
+
+  .name > .fname,
+  .name > .lname {
+    font-size: 10vw;
+    text-align: center;
+  }
+
+  .profile-pic {
+    grid-row: 2;
+    margin: 0 auto 5vw auto;
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile-pic img {
+    width: 60vw;
+    margin-bottom: 3vw;
+  }
+
+  .profile-pic a {
+    font-size: 3vw;
+    margin: 0 auto;
+  }
+
+  .who-am-i {
+    margin: 0 5vw 5vw 5vw;
+    font-size: 4vw;
+    text-align: center;
+    grid-row: 3;
+    grid-column: 1;
+  }
+
+  .my-work {
+    margin: 5vw auto;
+    font-size: 4vw;
+    grid-row: 4;
+    grid-column: 1;
+    width: 90vw;
+    display: flex;
+  }
+
+  .my-work > .my-work-nav > button {
+    font-size: 1vw;
+    padding: 2vw 5vw;
+    border-radius: 30px;
+  }
+
+  .my-work > .my-work-nav {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .description {
+    font-size: 6vw;
+  }
+
+  .main-about {
+    font-size: 12vw;
+  }
+}
+
+body,
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  position: sticky;
+}
