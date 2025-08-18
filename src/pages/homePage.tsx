@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import '../css/homepage.css'
 import { motion } from "framer-motion";
-
+import profilePic from '../assets/Profile-Picture.png'
 
 
 let firstLoad = false;
@@ -50,7 +50,7 @@ function Homepage() {
                     }}
                     onAnimationComplete={()=>{firstLoad = true}}
                     >
-                        <img src="src\assets\Profile-Picture.png" alt="" />
+                        <img src={profilePic} alt="" />
                         <a href="mailto:cameron.l.jolly@gmail.com">cameron.l.jolly@gmail.com</a>
                         <NavLink to="/Resume">Resume</NavLink>
 
