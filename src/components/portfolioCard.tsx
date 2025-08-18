@@ -11,7 +11,7 @@ function PortfolioCard({description='',imageLink='', title='', projectLink = ''}
                 <p className="card-description">{description}</p>
             </div>
             <div className="card-action">
-                <a target="blank" href={projectLink}><button>→</button></a>
+                <a target="_blank" href={projectLink}><button>→</button></a>
                 <span className="check-out-text">Check it Out</span>
             </div>
         </div>
