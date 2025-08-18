@@ -68,7 +68,7 @@ function Homepage() {
                     onAnimationComplete={()=>{firstLoad = true}}
                     >
                         <h2 className='main-about'>About</h2>
-                        <p className='description'>I'm a full stack web developer specilizing in react and backend systems. I make sure your systems are efficent and clean, I love simulations and managing large sets of data. </p>
+                        <p className='description'>I'm a Full Stack Web Development student and creative technologist who builds responsive, interactive web experiences using tools like React, TypeScript, Python, and C++. With a knack for problem-solving and a collaborative mindset, I combine technical skill with design sensibility to bring engaging digital projects to life. </p>
                     </motion.div>
 
                     <motion.div 
